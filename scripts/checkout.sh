@@ -6,7 +6,7 @@ name: Phase 1 - Basic Checkout
 on:
   # Temporarily disabled - enable manually via workflow_dispatch
   push:
-    branches: [ main, phase1 ]
+    branches: [ main, scripts ]
   pull_request:
     branches: [ main ]
   workflow_dispatch:
