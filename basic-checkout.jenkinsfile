@@ -32,8 +32,8 @@ pipeline {
     }
 }
 
-    stage('Application Build') {
-        steps {
+        stage('Application Build') {
+            steps {
             echo "Building an Application"
             '''
             sh 'bash scripts/build.sh
