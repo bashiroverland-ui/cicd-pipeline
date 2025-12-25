@@ -35,6 +35,11 @@ pipeline {
                 echo "Test completed"
             }
          }
+         stage('Docker image build'){
+            steps {
+                docker build -t yerlanbash/cicdpipelinepractical
+                }
+               } 
       } //stages
 
     post {
