@@ -20,7 +20,7 @@ pipeline {
                 '''
             }
         }
-    }
+    
 
         stage('Application Build') {
             echo "Building an Application"
@@ -36,5 +36,6 @@ pipeline {
         failure {
             echo '❌ Pipeline failed!'
         }
+      }
     }
 }
