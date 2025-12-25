@@ -21,6 +21,15 @@ pipeline {
             }
           }
         }
+          stage('Application Build') {
+            
+            echo "Building an Application"
+            '''
+            sh 'bash scripts/build.sh
+            '''
+            echo " Application built, moving to next stage"
+    }
+      
 
     post {
         success {
