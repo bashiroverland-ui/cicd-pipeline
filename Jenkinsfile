@@ -1,5 +1,3 @@
-// Phase 1: Basic Git Checkout
-// Goal: Learn how to connect a Git repository to Jenkins
 
 pipeline {
     agent any
