@@ -28,6 +28,12 @@ pipeline {
                 echo " Application built, moving to next stage"
            }
         }
+         stage('Tests'){
+            steps {
+                echo "Testing"
+                sh 'chmod +x scripts/test.sh'
+                echo "Test completed"
+            }
       }
 
     post {
