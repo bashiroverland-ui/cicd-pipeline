@@ -29,6 +29,7 @@ pipeline {
             '''
             echo "Application built, moving to the next stage"
             }
+        }
     post {
         success {
             echo '✅ Pipeline completed successfully!'
