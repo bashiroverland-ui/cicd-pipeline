@@ -49,5 +49,7 @@ pipeline {
             echo "testing finished"
     }
         stage('Docker Image Build') {
+            steps {
             sh'docker run hello-world'
         }
+}
