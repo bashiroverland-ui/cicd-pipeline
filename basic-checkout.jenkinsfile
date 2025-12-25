@@ -34,7 +34,8 @@ pipeline {
                 sh 'chmod +x scripts/test.sh'
                 echo "Test completed"
             }
-      }
+         }
+      } //stages
 
     post {
         success {
@@ -43,5 +44,5 @@ pipeline {
         failure {
             echo '❌ Pipeline failed!'
         }
-      }
-}
+      } //post
+} //pipline
