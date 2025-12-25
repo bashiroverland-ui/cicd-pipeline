@@ -39,7 +39,14 @@ pipeline {
             steps {
                 sh 'docker build -t yerlanbash/cicdpipelinepractical .'
                 }
-               } 
+               }
+        stage('Docker image push'){
+            steps{
+                withCredentials([usernamePassword(credentialsId: 'docker-hub-pass' , passwordVariable: 'PASS', usernameVariable: 'USER')]) {
+                sh "echo \$PASS | docker login -u \$USER --password-stdin"
+                sh 'docker push yerlanbash/cicdpipelinepractical'
+                }
+              }
       } //stages
 
     post {
