@@ -43,3 +43,4 @@ pipeline {
 
             sh'docker run hello-world'
         }
+ }
