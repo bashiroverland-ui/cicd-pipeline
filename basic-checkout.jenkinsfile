@@ -25,7 +25,7 @@ pipeline {
             steps {        
                 echo "Building an Application"
                 '''
-                sh bash scripts/build.sh'                
+                sh bash scripts/build.sh                
                 '''
                 echo " Application built, moving to next stage"
            }
